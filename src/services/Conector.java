@@ -39,10 +39,10 @@ public class Conector {
             connect = DriverManager.getConnection(url, "root", "");
             boolean isValid = connect.isValid(500);
             System.out.println(isValid ? "*******************************\n"
-            + "***Conectado al servidor SQL***\n" 
+            + "*  Conectado al servidor SQL  *\n" 
             + "*******************************\n" : ""
             + "*******************************\n"
-            + "...Conéctate al servidor SQL...\n" 
+            + "*..Conéctate al servidor SQL..*\n" 
             + "*******************************\n");
             /* System.out.println(isValid ? "SQL Connected" : "Connection Failed");*/
             /* System.out.println(isValid ? "" : "SQL Connection Failed"); */

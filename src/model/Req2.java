@@ -7,10 +7,6 @@ public class Req2 {
     private int estrato;
     private double porcetaje;
 
-    public Req2() {
-        super();
-    }
-
     public Req2(String fechaInicio, int financiable, int estrato, double porcetaje) {
         this.fechaInicio = fechaInicio;
         this.financiable = financiable;
@@ -20,8 +16,9 @@ public class Req2 {
 
     @Override
     public String toString() {
-        return "Req2 [estrato=" + estrato + ", fechaInicio=" + fechaInicio + ", financiable=" + financiable
-                + ", porcetaje=" + porcetaje + "]";
+        return "Req2 [estrato=" + estrato + ", fechaInicio=" + fechaInicio 
+                + ", financiable=" + financiable + ", porcetaje=" + porcetaje 
+                + "]";
     }
 
 }

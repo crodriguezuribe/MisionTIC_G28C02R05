@@ -6,9 +6,6 @@ public class Req3 {
     private String pagado;
     private String clasificacion;
 
-    public Req3(){
-        super();
-    }
     
     public Req3(int idProyecto, String pagado, String clasificacion) {
         this.idProyecto = idProyecto;
@@ -16,8 +13,11 @@ public class Req3 {
         this.clasificacion = clasificacion;
     }
     
+    
     @Override
     public String toString() {
-        return "Req3 [clasificacion=" + clasificacion + ", idProyecto=" + idProyecto + ", pagado=" + pagado + "]";
+        return "Req3 [clasificacion=" + clasificacion + ", idProyecto=" 
+                + idProyecto + ", pagado=" + pagado + "]";
     }
+
 }

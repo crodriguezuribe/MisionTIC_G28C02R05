@@ -5,7 +5,7 @@ import java.sql.*;
 import model.*;
 import services.*;
 
-public class Controller {
+public class Controller{
 
     private ArrayList<Req1> req1s;
     private ArrayList<Req2> req2s;
@@ -31,25 +31,31 @@ public class Controller {
         this.req3s5 = new ArrayList<>();
         
         this.conectorDB = new Conector(url);
-        // checkConnect();
+        // checkConnect(); // Revisa conexión a SQL
     }
 
+/*****************************************************************************
+ * Revisa conexión a SQL
+ *****************************************************************************/
     public void checkConnect() {
         try {
             if (conectorDB.getConnect().isValid(300)) {
                 System.out.println("*******************************\n"
-                                + "***Conectado al servidor SQL***\n" 
+                                + "*  Conectado al servidor SQL  *\n" 
                                 + "*******************************\n");
                 /*System.out.println("");*/
             }
         } catch (Exception e) {
             System.out.println("*******************************\n"
-                            + "...Conéctate al servidor SQL...\n" 
+                            + "*..Conéctate al servidor SQL..*\n" 
                             + "*******************************\n");
             e.printStackTrace();
         }
     }
 
+/*****************************************************************************
+ * Reto 04
+ *****************************************************************************/
     public ArrayList<Req1> getReq1s() {
         return req1s;
     }
@@ -131,6 +137,9 @@ public class Controller {
         }
     }
 
+/*****************************************************************************
+ * Reto 05
+ *****************************************************************************/
     public void req15() {
         req1s5.clear();
         ResultSet rs = conectorDB.getReq1DB();        

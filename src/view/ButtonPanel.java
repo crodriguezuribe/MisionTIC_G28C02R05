@@ -8,8 +8,11 @@ import java.awt.event.ActionListener;
 import java.awt.FlowLayout;
 
 public class ButtonPanel extends JPanel implements ActionListener{
-    private JButton btnReq1, btnReq2, btnReq3;
-    private JLabel espacio12, espacio23;
+    private JButton btnReq1;
+    private JButton btnReq2;
+    private JButton btnReq3;
+    private JLabel space12; 
+    private JLabel space23;
 
     private View indexView;
 
@@ -18,8 +21,8 @@ public class ButtonPanel extends JPanel implements ActionListener{
         setLayout(new FlowLayout(FlowLayout.CENTER));
         indexView = introIndexView;
 
-        espacio12 = new JLabel("        ");
-        espacio23 = new JLabel("        ");
+        space12 = new JLabel("        ");
+        space23 = new JLabel("        ");
         btnReq1 = new JButton("Requirement 1");
         btnReq2 = new JButton("Requirement 2");
         btnReq3 = new JButton("Requirement 3");
@@ -29,9 +32,9 @@ public class ButtonPanel extends JPanel implements ActionListener{
         btnReq3.addActionListener(this);
 
         add(btnReq1);
-        add(espacio12);
+        add(space12);
         add(btnReq2);
-        add(espacio23);
+        add(space23);
         add(btnReq3);
     }
 
@@ -42,7 +45,6 @@ public class ButtonPanel extends JPanel implements ActionListener{
         }
         if (e.getActionCommand().equals(btnReq2.getActionCommand())) {
             indexView.updateList2();
-
         }
         if (e.getActionCommand().equals(btnReq3.getActionCommand())) {
             indexView.updateList3();

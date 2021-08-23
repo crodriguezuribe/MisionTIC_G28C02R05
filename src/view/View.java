@@ -15,8 +15,8 @@ public class View extends JFrame {
     public View(String url) {
         super();
         setLayout(new BorderLayout());
-        setSize(550, 700);
-        setMinimumSize(new Dimension(550, 700));
+        setSize(600, 700);
+        setMinimumSize(new Dimension(600, 700));
         setLocationRelativeTo(null);
 
         setTitle("MisionTIC 2022 - Grupo 28 - Ciclo 2 - Reto 5");
